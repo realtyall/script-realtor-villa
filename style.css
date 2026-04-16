@@ -1,7 +1,7 @@
 /* ==========================================================================
    Base Styles & Resets
    ========================================================================== */
-   
+
 :root {
     --color-navy: #1B2A4A;
     --color-gold: #C9A84C;
@@ -47,20 +47,48 @@ a {
    Typography & Core Classes
    ========================================================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.4;
     font-weight: 700;
 }
 
-.text-navy { color: var(--color-navy); }
-.text-gold { color: var(--color-gold); }
-.text-red { color: var(--color-red); }
-.text-white { color: var(--color-white); }
-.font-mont { font-family: var(--font-number); font-weight: 700; }
-.text-center { text-align: center; }
+.text-navy {
+    color: var(--color-navy);
+}
 
-.bg-navy { background-color: var(--color-navy); }
-.bg-offwhite { background-color: var(--color-offwhite); }
+.text-gold {
+    color: var(--color-gold);
+}
+
+.text-red {
+    color: var(--color-red);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.font-mont {
+    font-family: var(--font-number);
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-navy {
+    background-color: var(--color-navy);
+}
+
+.bg-offwhite {
+    background-color: var(--color-offwhite);
+}
 
 /* ==========================================================================
    Layout Containers
@@ -149,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-image {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Empathy Section */
@@ -234,10 +262,11 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-.comparison-table th, .comparison-table td {
+.comparison-table th,
+.comparison-table td {
     padding: 15px 20px;
     text-align: left;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 1rem;
 }
 
@@ -247,7 +276,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
 }
 
-.gold-th, .gold-td {
+.gold-th,
+.gold-td {
     color: var(--color-gold);
     background-color: rgba(201, 168, 76, 0.1);
     font-weight: 600;
@@ -294,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--color-white);
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-top: 4px solid var(--color-navy);
     height: 100%;
 }
@@ -444,7 +474,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
-.mt-4 { margin-top: 20px; }
+.mt-4 {
+    margin-top: 20px;
+}
 
 /* Recommend Section */
 .recommend-lists {
@@ -458,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-white);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .best-for li {
@@ -558,7 +590,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .number-box p {
@@ -574,7 +606,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .horizon-line {
     height: 1px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 25px 0;
 }
 
@@ -589,7 +621,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 40px;
     border-radius: 12px;
 }
@@ -603,7 +635,7 @@ h1, h2, h3, h4, h5, h6 {
 .author-career {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .author-history {
@@ -617,6 +649,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 8px;
     color: #ddd;
 }
+
 .author-history li::before {
     content: "•";
     position: absolute;
@@ -644,7 +677,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-white);
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .faq-item .q {
@@ -728,6 +761,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+.contact-highlight {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: var(--color-navy);
+    letter-spacing: -0.2px;
+}
+
+.cta-sub-text {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .final-cta-button {
     display: block;
     width: 100%;
@@ -746,6 +795,45 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
+/* Purchase Section - Enhanced Premium Style */
+.purchase-container {
+    margin: 40px 0;
+    padding: 40px;
+    background: linear-gradient(145deg, #ffffff, var(--color-offwhite));
+    border-radius: 20px;
+    border: 2px solid var(--color-gold);
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.purchase-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: 1.7rem;
+    padding: 24px;
+    border-radius: 14px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 25px rgba(255, 71, 87, 0.4);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.purchase-btn:hover {
+    background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(255, 71, 87, 0.6);
+}
+
+.purchase-info {
+    font-size: 1.1rem;
+    color: var(--color-charcoal);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
 .guarantee {
     display: flex;
     flex-wrap: wrap;
@@ -753,6 +841,9 @@ h1, h2, h3, h4, h5, h6 {
     gap: 15px;
     font-size: 0.9rem;
     color: #666;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(0,0,0,0.1);
 }
 
 /* Footer CTA */
@@ -762,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .final-ask {
     font-size: 1.1rem;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 15px;
 }
 
