@@ -880,3 +880,81 @@ h6 {
     padding: 15px 40px;
     border-radius: 50px;
 }
+
+/* ==========================================================================
+   Bonus Section Styles
+   ========================================================================== */
+
+.bonus-section {
+    background-color: var(--color-white);
+    padding: 100px 0;
+}
+
+.bonus-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .bonus-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.bonus-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--color-gray-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bonus-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-gold);
+    box-shadow: 0 20px 40px rgba(201, 168, 76, 0.15);
+}
+
+.bonus-tag {
+    display: inline-block;
+    font-family: var(--font-number);
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--color-gold);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.bonus-card h3 {
+    font-family: var(--font-main-head);
+    font-size: 1.5rem;
+    color: var(--color-navy);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.bonus-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+.bonus-card::after {
+    content: "FREE";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--color-red);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
