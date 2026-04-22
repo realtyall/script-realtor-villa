@@ -1,0 +1,4 @@
+threads/
+*.pdf
+.venv/
+node_modules/
