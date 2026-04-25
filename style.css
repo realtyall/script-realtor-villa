@@ -18,6 +18,10 @@
     --font-number: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -91,8 +95,190 @@ h6 {
 }
 
 /* ==========================================================================
-   Layout Containers
+   Audio Promotion & Download Styles
    ========================================================================== */
+
+.audio-promo {
+    padding: 60px 0;
+    background-color: var(--color-white);
+}
+
+.audio-promo-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.audio-promo-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.audio-promo-icon {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    background: #8b5cf6;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.audio-promo-card:hover .audio-promo-icon {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.audio-promo-content {
+    flex: 1;
+}
+
+.audio-promo-content h3 {
+    font-family: var(--font-sub-head);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.audio-promo-content p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.audio-promo-content .highlight-purple {
+    color: #a78bfa;
+    font-weight: 700;
+}
+
+.audio-promo-content .highlight-gold {
+    color: #fbbf24;
+    font-weight: 700;
+}
+
+.audio-promo-btn {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 14px 28px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.audio-promo-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
+    transform: translateX(5px);
+}
+
+/* Bottom Audio Download Section */
+.audio-download-wrapper {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.audio-download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(to right, #8b5cf6, #7c3aed);
+    color: white;
+    padding: 22px 30px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.audio-download-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.6);
+    filter: brightness(1.1);
+}
+
+.audio-download-btn i, .audio-download-btn span.icon {
+    font-size: 1.8rem;
+}
+
+.audio-download-meta {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-download-meta p {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.audio-download-meta .sub-info {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .audio-promo-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+    
+    .audio-promo-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
+    
+    .audio-promo-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .audio-promo-content p {
+        font-size: 1rem;
+    }
+
+    .audio-download-btn {
+        font-size: 1.25rem;
+        padding: 18px 20px;
+    }
+}
 
 .container {
     width: 100%;
